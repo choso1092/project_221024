@@ -18,7 +18,8 @@ import java.util.List;
 @Entity
 @ToString(exclude = {"orderGroupList"})
 @EntityListeners(AuditingEntityListener.class)
-//@Builder
+@Builder
+@Accessors(chain = true)
 //@Accessors(chain = true)
 public class User {
 
